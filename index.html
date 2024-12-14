@@ -21,7 +21,7 @@
     }
 
     .login-container {
-      width: 100%;
+      width: 90%;
       max-width: 400px;
       background-color: #fff;
       border-radius: 8px;
@@ -154,7 +154,6 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
- 
   .then(() => { window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
 })
